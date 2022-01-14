@@ -6,24 +6,15 @@ public class Main {
 
         Animal dog = new Animal("dog");
         Animal cat = new Animal("cat");
-        dog.feed();
-        dog.feed();
-        dog.feed();
-        dog.takeForWalk();
-        dog.takeForWalk();
-        dog.takeForWalk();
-        dog.feed();
-        dog.takeForWalk();
-        dog.takeForWalk();
-        dog.takeForWalk();
-        dog.takeForWalk();
-        dog.takeForWalk();
-        dog.takeForWalk();
-        dog.takeForWalk();
-        dog.takeForWalk();
-        dog.takeForWalk();
-        dog.takeForWalk();
-        dog.takeForWalk();
-        dog.takeForWalk();
+
+        Human jan = new Human();
+        Car porsche = new Car();
+
+        jan.setSalary(2300.99);
+        jan.setSalary(-1222);
+        jan.getSalary();
+
+
+
     }
 }
