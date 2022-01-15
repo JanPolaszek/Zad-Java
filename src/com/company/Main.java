@@ -8,11 +8,14 @@ public class Main {
         Animal cat = new Animal("cat");
 
         Human jan = new Human();
-        Car porsche = new Car();
 
-        jan.setSalary(2300.99);
-        jan.setSalary(-1222);
+        Car ferro = new Car("Ferrari","Italia");
+        jan.setSalary(24300.99);
         jan.getSalary();
+
+        ferro.value = 2333;
+        jan.setCar(ferro);
+        jan.getCar();
 
 
 
