@@ -12,17 +12,20 @@ public class Main {
 
         Human jan = new Human();
 
-        Car car1 = new Car("Ferrari","Italia");
-        Car car2 = new Car("Ferrari","Italia");
+        Car car1 = new Car("Ferrari","Italia",2022);
+        Car car2 = new Car("Ferrari","Italia",2012);
         System.out.println(car1);
         System.out.println(car2);
         System.out.println(car1 == car2);
         System.out.println(car1.equals(car2));
         System.out.println("-----------------");
-        Phone phone1 = new Phone("Samsung","Galaxy");
-        Phone phone2 = new Phone("Iphone","XS");
+        Phone phone1 = new Phone("Samsung","Galaxy",2018);
+        Phone phone2 = new Phone("Iphone","XS",2019);
         System.out.println(phone1);
         System.out.println(phone2);
+        System.out.println("-=-=-=-=-=-=-=-=-");
+        phone1.turnOn();
+        System.out.println(phone1);
 
 
 

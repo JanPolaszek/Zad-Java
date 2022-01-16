@@ -1,14 +1,16 @@
 package com.company.devices;
 
-public class Car {
+public class Car extends Device {
     String model;
     String producer;
     public double value;
     Double power_engine;
 
-    public Car (String producer,String model){
+    public Car (String producer,String model,Integer yearOfProduction){
+        super(producer,model,yearOfProduction);
         this.producer = producer;
         this.model = model;
+        this.yearOfProduction = yearOfProduction;
     }
 
     public String getProducer() {
@@ -24,8 +26,13 @@ public class Car {
         this.model = model;
     }
 
-    public String toString(){
-        return producer+" "+model;
+    //public String toString(){
+     //   return producer+" "+model;
+    //}
+
+    @Override
+    public void turnOn() {
+        System.out.println("Uruchom");
     }
 
     @Override
@@ -44,6 +51,8 @@ public class Car {
         else if (!producer.equals(other.producer))
             return false;
         if (model != other.model)
+            return false;
+        if (yearOfProduction != other.yearOfProduction)
             return false;
         return true;
     }
