@@ -1,5 +1,8 @@
 package com.company;
 
+import com.company.devices.Car;
+import com.company.devices.Phone;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -9,13 +12,21 @@ public class Main {
 
         Human jan = new Human();
 
-        Car ferro = new Car("Ferrari","Italia");
-        jan.setSalary(24300.99);
-        jan.getSalary();
+        Car car1 = new Car("Ferrari","Italia");
+        Car car2 = new Car("Ferrari","Italia");
+        System.out.println(car1);
+        System.out.println(car2);
+        System.out.println(car1 == car2);
+        System.out.println(car1.equals(car2));
+        System.out.println("-----------------");
+        Phone phone1 = new Phone("Samsung","Galaxy");
+        Phone phone2 = new Phone("Iphone","XS");
+        System.out.println(phone1);
+        System.out.println(phone2);
 
-        ferro.value = 2333;
-        jan.setCar(ferro);
-        jan.getCar();
+
+
+
 
 
 

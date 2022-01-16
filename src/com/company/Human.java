@@ -1,11 +1,14 @@
 package com.company;
 
+import com.company.devices.Car;
+import com.company.devices.Phone;
+
 import java.util.Date;
 
 public class Human {
     String firstname;
     String lastname;
-
+    Phone phone;
     private Car car;
     private Double salary;
 
